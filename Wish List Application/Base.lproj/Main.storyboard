@@ -40,14 +40,37 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aid-At-dTY">
+                                <rect key="frame" x="20" y="40" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.18063108420000001" green="1" blue="0.38319386319999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Will I get one">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MWI-wV-ZXn">
+                                <rect key="frame" x="170" y="40" width="130" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Want"/>
+                                    <segment title="Don't want"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="MWI-wV-ZXn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="OHI-Li-3fd"/>
+                            <constraint firstItem="aid-At-dTY" firstAttribute="width" secondItem="MWI-wV-ZXn" secondAttribute="width" id="Oj7-yI-SPQ"/>
+                            <constraint firstAttribute="trailing" secondItem="MWI-wV-ZXn" secondAttribute="trailing" constant="20" id="RM3-Uv-HCP"/>
                             <constraint firstItem="Lgs-T1-EB2" firstAttribute="top" secondItem="Vcb-ta-f28" secondAttribute="bottom" constant="70" id="TWh-Mm-LH4"/>
+                            <constraint firstItem="aid-At-dTY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="XkN-mV-LVH"/>
                             <constraint firstItem="Lgs-T1-EB2" firstAttribute="centerX" secondItem="Vcb-ta-f28" secondAttribute="centerX" id="Xnu-If-CXq"/>
+                            <constraint firstItem="MWI-wV-ZXn" firstAttribute="leading" secondItem="aid-At-dTY" secondAttribute="trailing" constant="20" id="Z94-4l-2yB"/>
                             <constraint firstItem="Vcb-ta-f28" firstAttribute="leading" secondItem="RN5-Dj-rK3" secondAttribute="leading" constant="-24" id="azx-50-vbW"/>
+                            <constraint firstItem="aid-At-dTY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="hnb-ka-BGT"/>
                             <constraint firstItem="Vcb-ta-f28" firstAttribute="top" secondItem="RN5-Dj-rK3" secondAttribute="bottom" constant="59" id="rUj-IT-A1J"/>
                             <constraint firstItem="Vcb-ta-f28" firstAttribute="trailing" secondItem="RN5-Dj-rK3" secondAttribute="trailing" constant="24" id="wlz-3v-bho"/>
+                            <constraint firstItem="aid-At-dTY" firstAttribute="top" secondItem="MWI-wV-ZXn" secondAttribute="top" id="xoX-Ik-iQB"/>
                             <constraint firstAttribute="centerX" secondItem="RN5-Dj-rK3" secondAttribute="centerX" constant="-0.5" id="zmC-DI-8z6"/>
                         </constraints>
                     </view>
